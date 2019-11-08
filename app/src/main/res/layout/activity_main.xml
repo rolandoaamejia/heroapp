@@ -36,8 +36,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
-        android:layout_width="235dp"
-        android:layout_height="350dp"
+        android:layout_width="316dp"
+        android:layout_height="305dp"
         android:background="#F1F1F1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,20 +50,20 @@
             android:id="@+id/button2"
             android:layout_width="136dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="290dp"
+            android:layout_marginTop="200dp"
             android:background="#ffd54f"
             android:text="Buscar"
-            android:translationX="50dp" />
+            android:translationX="90dp" />
 
         <EditText
             android:id="@+id/editText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="100dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+             />
     </FrameLayout>
 
 
