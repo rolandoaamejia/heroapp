@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:text="HERO"
-        android:textColor="#3C3F41"
+        android:textColor="#FFFFFF"
         android:textSize="86sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,29 +36,30 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
-        android:layout_width="259dp"
-        android:layout_height="424dp"
-        android:background="#3C3F41"
+        android:layout_width="235dp"
+        android:layout_height="350dp"
+        android:background="#F1F1F1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.876">
+        app:layout_constraintVertical_bias="0.793">
 
         <Button
             android:id="@+id/button2"
             android:layout_width="136dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="350dp"
+            android:layout_marginTop="290dp"
             android:background="#ffd54f"
             android:text="Buscar"
-            android:translationX="60dp" />
+            android:translationX="50dp" />
 
         <EditText
             android:id="@+id/editText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="100dp"
             android:ems="10"
             android:inputType="textPersonName"

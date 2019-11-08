@@ -18,13 +18,13 @@
         android:id="@+id/textView3"
         android:layout_width="242dp"
         android:layout_height="112dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="24dp"
         android:text="HERO"
-        android:textColor="#3C3F41"
-        android:textSize="86sp"
+        android:textColor="#F7F7F8"
+        android:textSize="56sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,41 +32,43 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="96dp"
         android:text="SEARCH"
         android:textColor="#FFC107"
-        android:textSize="56sp"
+        android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintHorizontal_bias="0.408"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
-        android:layout_width="310dp"
-        android:layout_height="447dp"
+        android:layout_width="340dp"
+        android:layout_height="547dp"
         android:background="#F5EEEE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.876">>
+
         <Button
             android:id="@+id/button2"
             android:layout_width="136dp"
             android:layout_height="wrap_content"
-            android:translationX="10dp"
-            android:layout_marginTop="380dp"
+            android:layout_marginTop="490dp"
             android:background="#ffd54f"
-            android:text="Regresar" />
+            android:text="Regresar"
+            android:translationX="10dp" />
+
         <Button
             android:id="@+id/button2"
             android:layout_width="136dp"
             android:layout_height="wrap_content"
-            android:translationX="160dp"
+            android:layout_marginTop="490dp"
             android:background="#ffd54f"
-            android:layout_marginTop="380dp"
-            android:text="Salir" />
+            android:text="Salir"
+            android:translationX="190dp" />
 
     </FrameLayout>
 
