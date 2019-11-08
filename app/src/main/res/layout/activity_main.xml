@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:text="HERO"
-        android:textColor="#FFFFFF"
+        android:textColor="#3C3F41"
         android:textSize="86sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
     <FrameLayout
         android:layout_width="259dp"
         android:layout_height="424dp"
-        android:background="#F7F3F3"
+        android:background="#3C3F41"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
