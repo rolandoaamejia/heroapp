@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnBuscar.setOnClickListener(){
-            val Intent = Intent(this, pantallaDatos::class.java)
+            val Intent = Intent(this, pantallaDatos1::class.java)
             startActivity(Intent)
         }
 
