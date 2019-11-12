@@ -1,5 +1,9 @@
 package com.example.heroapp
 
+import android.content.Context
+import android.net.ConnectivityManager
+import androidx.appcompat.app.AppCompatActivity
+
 /*
     Verifica si existe conectividad de red y acceso a Internet
  */
