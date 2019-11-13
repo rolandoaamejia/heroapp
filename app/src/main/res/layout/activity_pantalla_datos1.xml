@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantallaDatos1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="463dp"
+        android:layout_height="879dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/heroapp"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="HERO"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="SEARCH"
+        android:textColor="#FFC107"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="326dp"
+        android:layout_height="584dp"
+        android:background="#FAF6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687">
+
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="510dp"
+            android:background="#ffd54f"
+            android:text="Regresar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="22sp"
+            android:translationX="90dp" />
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:text="NOMBRE"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="24sp"
+            android:translationX="20dp" />
+
+        <TextView
+            android:id="@+id/txtInteligencia"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+            android:text="INTELIGENCIA"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="24sp"
+            android:translationX="20dp" />
+
+        <TextView
+            android:id="@+id/txtFuerza"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="245dp"
+            android:text="FUERZA"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="24sp"
+            android:translationX="20dp" />
+
+        <TextView
+            android:id="@+id/txtVelocidad"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:text="VELOCIDAD"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="24sp"
+            android:translationX="20dp" />
+
+
+        <TextView
+            android:id="@+id/txtDurabilidad"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:text="DURABILIDAD"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="24sp"
+            android:translationX="20dp" />
+
+        <TextView
+            android:id="@+id/txtPoder"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="360dp"
+            android:text="PODER"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="24sp"
+            android:translationX="20dp" />
+
+        <TextView
+            android:id="@+id/txtCombate"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:text="COMBATE"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="24sp"
+            android:translationX="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="181dp"
+            android:layout_height="149dp"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/facehero" />
+
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
