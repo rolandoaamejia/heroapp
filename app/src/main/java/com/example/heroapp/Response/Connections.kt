@@ -1,6 +1,6 @@
 package com.example.heroapp.Response
 
 data class Connections(
-    val group-affiliation: String,
+    val groupaffiliation: String,
     val relatives: String
 )

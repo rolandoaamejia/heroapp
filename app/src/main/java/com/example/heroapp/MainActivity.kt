@@ -58,7 +58,6 @@ class MainActivity : AppCompatActivity() {
             Request.Method.GET, url,
             Response.Listener<String> { response ->
                 Log.d("HTTPVolley",  response)
-
                 jsonToObject(response)
             },
             Response.ErrorListener {
@@ -72,7 +71,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun getUrlApi(hero: String): String {
 
-        return "https://https://www.superheroapi.com/api.php/1153860768144457/search/$hero"
+        return "https://www.superheroapi.com/api.php/1153860768144457/search/$hero"
     }
 
 
@@ -85,41 +84,48 @@ class MainActivity : AppCompatActivity() {
         val gson = Gson()
         val apiResponse = gson.fromJson(response, ApiResponse::class.java)
         //Toast.makeText(this,"OK",Toast.LENGTH_SHORT)
-          if (apiResponse.response=="success")
-          {
-              var tamArray:Int=apiResponse.results.size-1
-              var i=0
+        var selec:Int=0
 
-              for (num in i..tamArray){
+              Toast.makeText(this,"ok",Toast.LENGTH_SHORT)
 
-                  if(apiResponse.results.get(i).name==editText_Buscar.text.toString()){
-                      break
+              if(apiResponse.results.isNotEmpty())
+              {
+
+                  var tamArray:Int=apiResponse.results.size
+
+                  /*
+                  var i=0
+
+                  for (num in i..tamArray){
+
+                      if(apiResponse.results.get(i).name==editText_Buscar.text.toString()){
+                          selec=i
+                          break
+                      }
+                      i=i+1
+
+
                   }
-                  i=i+1
+
+
+                   */
+                  //apiResponse.results.get(i).image
+
+                 /* val intent:Intent = Intent(this,pantallaDatos1::class.java)
+                  intent.putExtra("name",apiResponse.results.get(i).name)
+                  intent.putExtra("intelligence",apiResponse.results.get(i).powerstats.intelligence)
+                  intent.putExtra("strenght",apiResponse.results.get(i).powerstats.strength)
+                  intent.putExtra("speed",apiResponse.results.get(i).powerstats.speed)
+                  intent.putExtra("durability",apiResponse.results.get(i).powerstats.durability)
+                  intent.putExtra("power",apiResponse.results.get(i).powerstats.power)
+                  intent.putExtra("combat",apiResponse.results.get(i).powerstats.combat)
+
+                  startActivity(intent)
+
+                  */
               }
 
 
-
-              apiResponse.results.get(i).image
-
-
-              val intent:Intent = Intent(this,pantallaDatos1::class.java)
-              intent.putExtra("name",apiResponse.results.get(i).name)
-              intent.putExtra("intelligence",apiResponse.results.get(i).powerstats.intelligence)
-              intent.putExtra("strenght",apiResponse.results.get(i).powerstats.strength)
-              intent.putExtra("speed",apiResponse.results.get(i).powerstats.speed)
-              intent.putExtra("durability",apiResponse.results.get(i).powerstats.durability)
-              intent.putExtra("power",apiResponse.results.get(i).powerstats.power)
-              intent.putExtra("combat",apiResponse.results.get(i).powerstats.combat)
-
-              startActivity(intent)
-
-
-          }
-        else
-          {
-              Toast.makeText(this,"NOT FOUND",Toast.LENGTH_SHORT)
-          }
     }
 
 }

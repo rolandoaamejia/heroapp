@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">heroapp</string>
-
+    <string name="txtNombre">heroapp</string>
 </resources>
