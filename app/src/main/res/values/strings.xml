@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">heroapp</string>
     <string name="txtNombre">heroapp</string>
+
+    <string name="button_buscar">Search</string>
+    <string name="search">SEARCH</string>
+    <string name="hero">HERO</string>
+    <string name="todo">TODO</string>
 </resources>

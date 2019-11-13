@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
-        android:text="HERO"
+        android:text="@string/hero"
         android:textColor="#FFFFFF"
         android:textSize="86sp"
         android:textStyle="bold"
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="156dp"
-        android:text="SEARCH"
+        android:text="@string/search"
         android:textColor="#FFC107"
         android:textSize="56sp"
         android:textStyle="bold"
@@ -53,20 +53,23 @@
             android:layout_marginTop="200dp"
             android:background="#ffd54f"
             android:drawableLeft="@android:drawable/ic_search_category_default"
-            android:text="Buscar"
+            android:text="@string/button_buscar"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="22sp"
-            android:translationX="90dp" />
+            android:translationX="90dp"
+            android:drawableStart="@android:drawable/ic_search_category_default" />
 
         <EditText
             android:id="@+id/editText_Buscar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
             android:layout_marginLeft="35dp"
             android:layout_marginTop="100dp"
             android:ems="10"
-            android:inputType="textPersonName"
-             />
+            android:hint="@string/hero"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
     </FrameLayout>
 
 
