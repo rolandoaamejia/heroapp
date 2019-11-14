@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="HERO"
+        android:text="@string/hero"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:text="SEARCH"
+        android:text="@string/search"
         android:textColor="#FFC107"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="510dp"
             android:background="#ffd54f"
-            android:text="Regresar"
+            android:text="@string/regresar"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="22sp"
             android:translationX="90dp" />
@@ -75,7 +75,7 @@
             android:layout_width="286dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="170dp"
-            android:text="NOMBRE"
+            android:text="@string/nombre"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="24sp"
             android:translationX="20dp" />
@@ -85,7 +85,7 @@
             android:layout_width="287dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="250dp"
-            android:text="INTELLIGENCE"
+            android:text="@string/intelligence"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="24sp"
             android:translationX="20dp" />
@@ -95,7 +95,7 @@
             android:layout_width="290dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="290dp"
-            android:text="FORCE"
+            android:text="@string/force"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="24sp"
             android:translationX="20dp" />
@@ -105,7 +105,7 @@
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="330dp"
-            android:text="SPEED"
+            android:text="@string/speed"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="24sp"
             android:translationX="20dp" />
@@ -116,7 +116,7 @@
             android:layout_width="286dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="372dp"
-            android:text="DURABILITY"
+            android:text="@string/durability"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="24sp"
             android:translationX="20dp" />
@@ -126,7 +126,7 @@
             android:layout_width="297dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="412dp"
-            android:text="POWER"
+            android:text="@string/power"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="24sp"
             android:translationX="20dp" />
@@ -136,7 +136,7 @@
             android:layout_width="297dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="452dp"
-            android:text="COMBAT"
+            android:text="@string/combat"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="24sp"
             android:translationX="20dp" />
