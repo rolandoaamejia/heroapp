@@ -3,10 +3,10 @@
     <string name="txtNombre">heroapp</string>
 
     <string name="button_buscar">Search</string>
-    <string name="search">SEARCH</string>
+
     <string name="hero">HERO</string>
     <string name="todo">TODO</string>
-    <string name="hero">HERO</string>
+
     <string name="search">SEARCH</string>
     <string name="regresar">Regresar</string>
     <string name="nombre">NOMBRE</string>
