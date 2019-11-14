@@ -96,9 +96,6 @@ class MainActivity : AppCompatActivity() {
 
             for (num in i..tamArray-1){
 
-
-
-
                 if(apiResponse.results.get(i).name==editText_Buscar.text.toString()){
                     selec=i
                     //     Toast.makeText(this,"${editText_Buscar.text} $selec",Toast.LENGTH_SHORT).show()
@@ -107,10 +104,7 @@ class MainActivity : AppCompatActivity() {
                     break
                 }
 
-
-
                 i=i+1
-
 
             }
 
