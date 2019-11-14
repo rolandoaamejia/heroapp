@@ -34,13 +34,13 @@ class pantallaDatos1 : AppCompatActivity() {
         val combat = objetoIntent.getStringExtra("combat")
         val urlImage = objetoIntent.getStringExtra("urlImage")
 
-        txtNombre.text="Nombre: $name"
-        txtInteligencia.text="Inteligencia: $intelligence"
-        txtFuerza.text="Fuerza: $strenght"
-        txtVelocidad.text="Velocidad: $speed"
-        txtDurabilidad.text="Durabilidad: $durability"
-        txtPoder.text="Poder: $power"
-        txtCombate.text="Combate: $combat"
+        txtNombre.text="Name: $name"
+        txtInteligencia.text="Intelligence: $intelligence"
+        txtFuerza.text="Force: $strenght"
+        txtVelocidad.text="Speed: $speed"
+        txtDurabilidad.text="Durability: $durability"
+        txtPoder.text="Power: $power"
+        txtCombate.text="Combat: $combat"
         //Toast.makeText(this,"$urlImage", Toast.LENGTH_SHORT).show()
         Picasso.get()
             .load(urlImage)
