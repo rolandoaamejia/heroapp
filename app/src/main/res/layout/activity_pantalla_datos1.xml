@@ -84,8 +84,8 @@
             android:id="@+id/txtInteligencia"
             android:layout_width="287dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="210dp"
-            android:text="INTELIGENCIA"
+            android:layout_marginTop="250dp"
+            android:text="INTELLIGENCE"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="24sp"
             android:translationX="20dp" />
@@ -94,18 +94,18 @@
             android:id="@+id/txtFuerza"
             android:layout_width="290dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="245dp"
-            android:text="FUERZA"
+            android:layout_marginTop="290dp"
+            android:text="FORCE"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="24sp"
             android:translationX="20dp" />
 
         <TextView
             android:id="@+id/txtVelocidad"
-            android:layout_width="288dp"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="280dp"
-            android:text="VELOCIDAD"
+            android:layout_marginTop="330dp"
+            android:text="SPEED"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="24sp"
             android:translationX="20dp" />
@@ -115,8 +115,8 @@
             android:id="@+id/txtDurabilidad"
             android:layout_width="286dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="320dp"
-            android:text="DURABILIDAD"
+            android:layout_marginTop="372dp"
+            android:text="DURABILITY"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="24sp"
             android:translationX="20dp" />
@@ -125,8 +125,8 @@
             android:id="@+id/txtPoder"
             android:layout_width="297dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="360dp"
-            android:text="PODER"
+            android:layout_marginTop="412dp"
+            android:text="POWER"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="24sp"
             android:translationX="20dp" />
@@ -135,8 +135,8 @@
             android:id="@+id/txtCombate"
             android:layout_width="297dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="400dp"
-            android:text="COMBATE"
+            android:layout_marginTop="452dp"
+            android:text="COMBAT"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="24sp"
             android:translationX="20dp" />

@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         if (Network.verifyConnection(this)) {
             httpVolley(getUrlApi(hero))
         } else {
-            Toast.makeText(this,"¡No tienes conexión a Internet!",Toast.LENGTH_SHORT)
+            Toast.makeText(this,"¡No tienes conexión a Internet!",Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
             },
             Response.ErrorListener {
                 Log.d("HTTPVolley", "Error en la URL $url")
-                Toast.makeText(this,"¡No tienes conexión a Internet!",Toast.LENGTH_SHORT)
+                Toast.makeText(this,"¡No tienes conexión a Internet!",Toast.LENGTH_SHORT).show()
             })
 
         // Agregar la peticion a la cola de peticiones
@@ -84,46 +84,58 @@ class MainActivity : AppCompatActivity() {
         val gson = Gson()
         val apiResponse = gson.fromJson(response, ApiResponse::class.java)
         //Toast.makeText(this,"OK",Toast.LENGTH_SHORT)
-        var selec:Int=0
-
-              Toast.makeText(this,"ok",Toast.LENGTH_SHORT)
-
-              if(apiResponse.results.isNotEmpty())
-              {
-
-                  var tamArray:Int=apiResponse.results.size
-
-                  /*
-                  var i=0
-
-                  for (num in i..tamArray){
-
-                      if(apiResponse.results.get(i).name==editText_Buscar.text.toString()){
-                          selec=i
-                          break
-                      }
-                      i=i+1
+        var selec:Int=-1
 
 
-                  }
+        if(apiResponse.response!="error")
+        {
+
+            var tamArray:Int=apiResponse.results.size
+
+            var i=0
+
+            for (num in i..tamArray-1){
 
 
-                   */
-                  //apiResponse.results.get(i).image
 
-                 /* val intent:Intent = Intent(this,pantallaDatos1::class.java)
-                  intent.putExtra("name",apiResponse.results.get(i).name)
-                  intent.putExtra("intelligence",apiResponse.results.get(i).powerstats.intelligence)
-                  intent.putExtra("strenght",apiResponse.results.get(i).powerstats.strength)
-                  intent.putExtra("speed",apiResponse.results.get(i).powerstats.speed)
-                  intent.putExtra("durability",apiResponse.results.get(i).powerstats.durability)
-                  intent.putExtra("power",apiResponse.results.get(i).powerstats.power)
-                  intent.putExtra("combat",apiResponse.results.get(i).powerstats.combat)
 
-                  startActivity(intent)
+                if(apiResponse.results.get(i).name==editText_Buscar.text.toString()){
+                    selec=i
+                    //     Toast.makeText(this,"${editText_Buscar.text} $selec",Toast.LENGTH_SHORT).show()
 
-                  */
-              }
+
+                    break
+                }
+
+
+
+                i=i+1
+
+
+            }
+
+            if (selec==-1){
+                Toast.makeText(this,"character with given name not found",Toast.LENGTH_SHORT).show()
+            }else{
+                val intent:Intent = Intent(this,pantallaDatos1::class.java)
+                intent.putExtra("name",apiResponse.results.get(selec).name)
+                intent.putExtra("intelligence",apiResponse.results.get(selec).powerstats.intelligence)
+                intent.putExtra("strenght",apiResponse.results.get(selec).powerstats.strength)
+                intent.putExtra("speed",apiResponse.results.get(selec).powerstats.speed)
+                intent.putExtra("durability",apiResponse.results.get(selec).powerstats.durability)
+                intent.putExtra("power",apiResponse.results.get(selec).powerstats.power)
+                intent.putExtra("combat",apiResponse.results.get(selec).powerstats.combat)
+                intent.putExtra("urlImage",apiResponse.results.get(selec).image.url)
+
+                startActivity(intent)
+            }
+
+
+
+
+        }else{
+            Toast.makeText(this,"character with given name not found",Toast.LENGTH_SHORT).show()
+        }
 
 
     }
